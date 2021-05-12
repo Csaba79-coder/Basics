@@ -81,6 +81,5 @@ public class ArrayPractice0510 {
             sumCharsToString = sumCharsToString + chars[i];
         }
         System.out.println(sumCharsToString);
-
     }
 }

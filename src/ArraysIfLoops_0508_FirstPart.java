@@ -1,10 +1,6 @@
-import java.util.Scanner;
-
-
 public class ArraysIfLoops_0508_FirstPart {
     public static void main(String[] args) {
 
-        Scanner scanner = new Scanner(System.in);
 
         byte[] bytes = {10, 33, -2, 0, 56, -42, 99, -73, 60};
         char[] chars = {'A', '*', 'c', 'd', 'E', ' '};
@@ -72,8 +68,8 @@ public class ArraysIfLoops_0508_FirstPart {
 
         String sumCharsToString = "";
 
-        for (int i = 0; i < chars.length; i++) {
-            sumCharsToString = sumCharsToString + chars[i];
+        for (char aChar : chars) {
+            sumCharsToString = sumCharsToString + aChar;
         }
         System.out.println("The sum of the chars: " + sumCharsToString + " after chars concatenate");
 
@@ -96,8 +92,8 @@ public class ArraysIfLoops_0508_FirstPart {
 
         String sumStrings = "";
 
-        for (int i = 0; i < strings.length; i++) {
-            sumStrings = sumStrings + strings[i];
+        for (String string : strings) {
+            sumStrings = sumStrings + string;
         }
         System.out.println("The sum of the chars: " + sumStrings + " after chars concatenate");
 
@@ -156,5 +152,18 @@ public class ArraysIfLoops_0508_FirstPart {
 //        The last string of the strings array is: szilva
 
 
+        System.out.println("------------------------------");
+        System.out.println("------------4th---------------");
+        System.out.println("------------------------------\n");
+
+
+        int negCounter = 0;
+
+        for (byte aByte : bytes) {
+            if (aByte < 0) {
+                negCounter++;
+            }
+        }
+        System.out.println("There is/are " + negCounter + " piece(s) of negative number in the bytes' array!");
     }
 }
