@@ -81,5 +81,29 @@ public class ArrayPractice0510 {
             sumCharsToString = sumCharsToString + chars[i];
         }
         System.out.println(sumCharsToString);
+
+        System.out.println("Counting chars in chars' array! \n");
+        int counter = 0;
+
+        for (int i = 0; i < chars.length; i++) {
+            if (chars[i] >= 'A' && chars[i] <= 'Z') {
+                counter++;
+                System.out.println(chars[i]);
+            }
+        }
+        System.out.println("There is/are " + (chars.length - counter) + " letter(s) in chars' array that is not belongs to ASCII" +
+                " capital letter(s) ABC!");
+
+
+        counter = 0;
+
+        for (int i = 0; i < chars.length; i++) {
+            if (chars[i] >= 'a' && chars[i] <= 'z') {
+                counter++;
+                System.out.println(chars[i]);
+            }
+
+        }
+
     }
 }
