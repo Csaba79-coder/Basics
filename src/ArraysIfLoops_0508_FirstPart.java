@@ -165,5 +165,31 @@ public class ArraysIfLoops_0508_FirstPart {
             }
         }
         System.out.println("There is/are " + negCounter + " piece(s) of negative number in the bytes' array!");
+
+        negCounter = 0;
+
+        for (int i = 0; i < ints.length; i++) {
+            if (ints[i] < 0) {
+                negCounter++;
+            }
+        }
+        System.out.println("There is/are " + negCounter + " piece(s) of negative number in the ints' array!");
+
+        negCounter = 0;
+
+        for (int i = 0; i < doubles.length; i++) {
+            if (doubles[i] < 0) {
+                negCounter++;
+            }
+        }
+        System.out.println("There is/are " + negCounter + " piece(s) of negative number in the doubles' array!");
+
+//        There is/are 3 piece(s) of negative number in the bytes' array!
+//        There is/are 3 piece(s) of negative number in the ints' array!
+//        There is/are 2 piece(s) of negative number in the doubles' array!
+
+
     }
 }
+
+
