@@ -189,6 +189,25 @@ public class ArraysIfLoops_0508_FirstPart {
 //        There is/are 2 piece(s) of negative number in the doubles' array!
 
 
+        System.out.println("------------------------------");
+        System.out.println("------------5th---------------");
+        System.out.println("------------------------------\n");
+
+        // https://data-flair.training/blogs/java-character-class/
+
+
+        int counter = 0;
+
+        for (int i = 0; i < chars.length; i++) {
+            if (chars[i] >= 'A' && chars[i] <= 'Z') {
+                counter++;
+                // System.out.println(chars[i]);
+            }
+        }
+        System.out.println("There is/are " + (chars.length - counter) + " letter(s) in chars' array that is not belongs to ASCII" +
+                " capital letter(s) ABC!");
+
+        // There is/are 4 letter(s) in chars' array that is not belongs to ASCII capital letter(s)!
     }
 }
 
