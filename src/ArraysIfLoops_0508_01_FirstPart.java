@@ -1,4 +1,4 @@
-public class ArraysIfLoops_0508_FirstPart {
+public class ArraysIfLoops_0508_01_FirstPart {
     public static void main(String[] args) {
 
 
@@ -25,8 +25,7 @@ public class ArraysIfLoops_0508_FirstPart {
         int maximum = lengthOfArrays[0];
         int indexLongest = 0;
 
-        for (int i = 0; i < lengthOfArrays.length; i++)
-        {
+        for (int i = 0; i < lengthOfArrays.length; i++) {
             if (maximum < lengthOfArrays[i]) {
                 maximum = lengthOfArrays[i];
                 indexLongest = i;
@@ -60,7 +59,7 @@ public class ArraysIfLoops_0508_FirstPart {
 
         int sumBytes = 0;
 
-        for (byte num  : bytes){
+        for (byte num : bytes) {
             sumBytes = sumBytes + num;
         }
         System.out.println("The sum of the bytes: " + sumBytes);
@@ -111,7 +110,7 @@ public class ArraysIfLoops_0508_FirstPart {
 
 
         byte firstNumBytes = bytes[0];
-        byte lastNumBytes = bytes[bytes.length- 1];
+        byte lastNumBytes = bytes[bytes.length - 1];
         System.out.println("The first num of the bytes array is: " + firstNumBytes);
         System.out.println("The last num of the bytes array is: " + lastNumBytes);
 
@@ -208,7 +207,16 @@ public class ArraysIfLoops_0508_FirstPart {
                 " capital letter(s) ABC!");
 
         // There is/are 4 letter(s) in chars' array that is not belongs to ASCII capital letter(s)!
+
+
+        System.out.println("------------------------------");
+        System.out.println("------------6th---------------");
+        System.out.println("------------------------------\n");
+
+        // 1st to check the value of maxLength!
+        // 2nd check which is that long
+        // creating a list, and append the word - for printing them
+        // creating a list to append the index value for writting which element / which index!
+
     }
 }
-
-
