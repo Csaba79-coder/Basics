@@ -218,5 +218,18 @@ public class ArraysIfLoops_0508_01_FirstPart {
         // creating a list, and append the word - for printing them
         // creating a list to append the index value for writting which element / which index!
 
+        int maxLength = 0;
+        String longestString = null;
+
+        for (String s : strings) {
+            if (s.length() > maxLength) {
+                maxLength = s.length();
+                longestString = s;
+            }
+        }
+        System.out.println("The length of the longest word is: " + maxLength);
+        System.out.println("The first longest word is: " + longestString);
+
+        // BUT I want to tell all of them!
     }
 }

@@ -105,5 +105,18 @@ public class ArrayPractice0510 {
 
         }
 
+        // gives back the first longest word of the array!
+
+        int maxLength = 0;
+        String longestString = null;
+
+        for (String s : strings) {
+            if (s.length() > maxLength) {
+                maxLength = s.length();
+                longestString = s;
+            }
+        }
+        System.out.println("The length of the longest word is: " + maxLength);
+        System.out.println("The first longest word is: " + longestString);
     }
 }
