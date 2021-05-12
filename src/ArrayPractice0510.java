@@ -1,8 +1,12 @@
 import java.util.Arrays;
 import java.util.Scanner;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
+
 
 public class ArrayPractice0510 {
-    public static void main (String[] args) {
+    public static void main(String[] args) {
 
 
         Scanner scanner = new Scanner(System.in);
@@ -51,8 +55,7 @@ public class ArrayPractice0510 {
         int maximum = lengthOfArrays[0];
         int indexLongest = 0;
 
-        for (int i = 0; i < lengthOfArrays.length; i++)
-        {
+        for (int i = 0; i < lengthOfArrays.length; i++) {
             if (maximum < lengthOfArrays[i]) {
                 maximum = lengthOfArrays[i];
                 indexLongest = i;
@@ -118,5 +121,86 @@ public class ArrayPractice0510 {
         }
         System.out.println("The length of the longest word is: " + maxLength);
         System.out.println("The first longest word is: " + longestString);
+
+        // how to create an empty list for Integers:
+
+        //Create an empty List.
+        List<Integer> myList = new ArrayList<Integer>();
+
+        System.out.println("Created empty immutable List: " + myList);
+
+        myList.add(1);
+        myList.add(2);
+
+        System.out.println("Added 2 elements to the list!" + myList);
+
+
+        maxLength = 0;
+        longestString = null;
+        List<String> emptyList = new ArrayList<>();
+
+        for (String s : strings) {
+            if (s.length() > maxLength) {
+                maxLength = s.length();
+                longestString = s;
+            }
+            if (maxLength == s.length()) {
+                emptyList.add(longestString);
+            }
+        }
+        System.out.println("The length of the longest word is: " + maxLength);
+        System.out.println("The first longest word is: " + longestString);
+        System.out.println(emptyList);
+
+
+        // BUT I want to tell all of them!
+
+        System.out.println("I want it all!");
+
+        index = 0;
+        List<Integer> indices = new ArrayList<Integer>();
+
+        for (int i = 0; i < strings.length; i++) {
+            if (strings[0].length() <= strings[i].length()) {
+                // System.out.println(strings[i].length());
+                indices.add(strings[i].length());
+                index = i;
+            }
+        }
+        System.out.println("The list includes the length of strings: " + indices);
+
+        System.out.println("This is the max value: " + Collections.max(indices));
+
+        max = Integer.MIN_VALUE;
+        int maxCount = 0;
+        int indexesArrayList;
+
+        for (int x : indices) {
+            if (x > max) {
+                max = x;
+                maxCount = 1;
+            } else if (x == max) {
+                maxCount++;
+                System.out.println(maxCount);
+            }
+        }
+
+        System.out.println("Max value : " + max);
+        System.out.println("Max Count : " + maxCount);
+        System.out.println(indices);
+
+
+        System.out.println("Max value : " + max);
+        System.out.println("Max Count : " + maxCount);
+
+        int maxNew = indices.stream().max(Integer::compareTo).get();
+        int finalMax = max;
+        System.out.println("The indexes of the elements are: " + IntStream.range(0, indices.size()).filter(ix ->
+                indices.get(ix).intValue() == finalMax).boxed().collect(Collectors.toList()));
+
+//        The first longest word is: barack
+//        The indexes of the elements are: [2, 3]
+        
     }
 }
+
