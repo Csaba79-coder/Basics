@@ -240,7 +240,6 @@ public class ArraysIfLoops_0508_01_FirstPart {
         }
         System.out.println("The length of the longest word is: " + maxLength);
         System.out.println("The first longest word is: " + longestString);
-        System.out.println(emptyList);
 
 
         // BUT I want to tell all of them!
@@ -307,6 +306,12 @@ public class ArraysIfLoops_0508_01_FirstPart {
 //        The number of the elements are the following: 4
 
 
+        System.out.println("------------------------------");
+        System.out.println("------------7th---------------");
+        System.out.println("------------------------------\n");
+
+
+
         double[][] firstTwoDimensionMatrixOfMyLife = new double[3][];
 
         // just for try and to know how it works and operates!
@@ -319,14 +324,31 @@ public class ArraysIfLoops_0508_01_FirstPart {
 
         System.out.println("Another solution with for loop:");
 
-        double[][] matrixTwoDimension = new double[3][];
+
+        int n = bytes.length; // choose the longest length! as it is not permutable!
+        double[][] matrixTwoDimension = new double[3][n];
 
         for (int i = 0; i < bytes.length; i++) {
-            for (int j = 0; j < matrixTwoDimension[i].length; j++) {
-                System.out.println(i);
-                System.out.println(j);
-            }
-                // matrixTwoDimension[i][j] = // Value you want to fill!
+            matrixTwoDimension[0][i] = bytes[i];
+            System.out.println(matrixTwoDimension[0][i]);
+
         }
+        System.out.println("Jump to the next one ... could not solve :(");
+
+
+        System.out.println("------------------------------");
+        System.out.println("------------8th---------------");
+        System.out.println("------------------------------\n");
+
+
+        System.out.println("I have no array, sorry to inform you :)");
+
+
+        System.out.println("------------------------------");
+        System.out.println("------------9th---------------");
+        System.out.println("------------------------------\n");
+
+
+
     }
 }
