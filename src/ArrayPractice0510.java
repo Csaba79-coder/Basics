@@ -200,7 +200,7 @@ public class ArrayPractice0510 {
         System.out.println("The max length of the string is: " + maxNew);
 
 
-        Vector<String> stringsCollection = new Vector<String>();
+        Vector<String> stringsCollection = new Vector<>(); // Vector<String> stringsCollection = new Vector<String>();
 
         for (int i = 0; i < strings.length; i++) {
             if (maxLength == strings[i].length()) {
