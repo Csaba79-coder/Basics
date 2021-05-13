@@ -1,5 +1,6 @@
-import java.util.*;
+import java.util.Arrays;
 import java.util.ArrayList;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
@@ -282,7 +283,7 @@ public class ArraysIfLoops_0508_01_FirstPart {
         int finalMax = max;
         System.out.println("The indexes of the elements are (collected in an ArrayList): " +
                 IntStream.range(0, indices.size()).filter(ix ->
-                indices.get(ix).intValue() == finalMax).boxed().collect(Collectors.toList()));
+                        indices.get(ix).intValue() == finalMax).boxed().collect(Collectors.toList()));
         System.out.println("The max length of the string is: " + maxNew);
 
 
@@ -291,8 +292,8 @@ public class ArraysIfLoops_0508_01_FirstPart {
         for (int i = 0; i < strings.length; i++) {
             if (maxLength == strings[i].length()) {
                 stringsCollection.add(strings[i]);
-                System.out.println("The indexes of the items are as follows: " +i);
-                System.out.println("The number of the elements are the following: " + (i+1));
+                System.out.println("The indexes of the items are as follows: " + i);
+                System.out.println("The number of the elements are the following: " + (i + 1));
             }
         }
         System.out.println("All the longest strings (collected in ArrayList) are as follows: " + stringsCollection);
@@ -305,6 +306,19 @@ public class ArraysIfLoops_0508_01_FirstPart {
 //        The number of the elements are the following: 3
 //        The indexes of the items are as follows: 3
 //        The number of the elements are the following: 4
+
+
+        double[][] firstTwoDimensionMatrixOfMyLife = new double[3][];
+
+        // just for try and to know how it works and operates!
+
+        firstTwoDimensionMatrixOfMyLife[0] = new double[]{10, 33, -2, 0, 56, -42, 99, -73, 60};
+        firstTwoDimensionMatrixOfMyLife[1] = new double[]{27, 969, -56, 1222, 8647000, -333, 7541, 89, 6502, -53042, 123, 876};
+        firstTwoDimensionMatrixOfMyLife[2] = new double[]{3.14, -765.99, 52.4986, -10.3333337, 834.0965};
+
+        System.out.println("This is my first new Two dimension of Array: " + Arrays.deepToString(firstTwoDimensionMatrixOfMyLife));
+
+        System.out.println("Another solution with for loop:");
 
 
     }
