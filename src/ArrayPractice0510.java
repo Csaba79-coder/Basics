@@ -197,10 +197,22 @@ public class ArrayPractice0510 {
         int finalMax = max;
         System.out.println("The indexes of the elements are: " + IntStream.range(0, indices.size()).filter(ix ->
                 indices.get(ix).intValue() == finalMax).boxed().collect(Collectors.toList()));
+        System.out.println("The max length of the string is: " + maxNew);
+
+
+        Vector<String> stringsCollection = new Vector<String>();
+
+        for (int i = 0; i < strings.length; i++) {
+            if (maxLength == strings[i].length()) {
+                stringsCollection.add(strings[i]);
+            }
+        }
+        System.out.println("All the longest strings (collected in ArrayList) are as follows: " + stringsCollection);
 
 //        The first longest word is: barack
 //        The indexes of the elements are: [2, 3]
-        
+//        All the longest strings (collected in ArrayList) are as follows: [barack, szilva]
+
     }
 }
 
