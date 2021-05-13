@@ -174,7 +174,6 @@ public class ArrayPractice0510 {
 
         max = Integer.MIN_VALUE;
         int maxCount = 0;
-        int indexesArrayList;
 
         for (int x : indices) {
             if (x > max) {

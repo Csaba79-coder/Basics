@@ -264,7 +264,6 @@ public class ArraysIfLoops_0508_01_FirstPart {
 
         int max = Integer.MIN_VALUE;
         int maxCount = 0;
-        int indexesArrayList;
 
         for (int x : indices) {
             if (x > max) {
