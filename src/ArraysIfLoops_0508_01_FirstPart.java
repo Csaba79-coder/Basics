@@ -319,6 +319,14 @@ public class ArraysIfLoops_0508_01_FirstPart {
 
         System.out.println("Another solution with for loop:");
 
+        double[][] matrixTwoDimension = new double[3][];
 
+        for (int i = 0; i < bytes.length; i++) {
+            for (int j = 0; j < matrixTwoDimension[i].length; j++) {
+                System.out.println(i);
+                System.out.println(j);
+            }
+                // matrixTwoDimension[i][j] = // Value you want to fill!
+        }
     }
 }
