@@ -111,7 +111,7 @@ public class ifConditionHW_0507 {
 
 
         System.out.println("------------------------------");
-        System.out.println("------------4th---------------");
+        System.out.println("------------5th---------------");
         System.out.println("------------------------------\n");
 
         // Pythagora's theorem
