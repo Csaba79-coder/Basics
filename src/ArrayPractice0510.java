@@ -205,13 +205,21 @@ public class ArrayPractice0510 {
         for (int i = 0; i < strings.length; i++) {
             if (maxLength == strings[i].length()) {
                 stringsCollection.add(strings[i]);
+                System.out.println("The indexes of the items are as follows: " +i);
+                System.out.println("The number of the elements are the following: " + (i+1));
             }
         }
         System.out.println("All the longest strings (collected in ArrayList) are as follows: " + stringsCollection);
+//        String stringNoCollection = stringsCollection.toString();
+//        System.out.println(stringNoCollection); // this did not operated had the same output!
 
 //        The first longest word is: barack
 //        The indexes of the elements are: [2, 3]
 //        All the longest strings (collected in ArrayList) are as follows: [barack, szilva]
+//        The indexes of the items are as follows: 2
+//        The number of the elements are the following: 3
+//        The indexes of the items are as follows: 3
+//        The number of the elements are the following: 4
 
     }
 }
