@@ -91,6 +91,17 @@ public class ChessBoardInitialization_0509 {
 
         System.out.println("" + str + strBuildFor);
 
+        System.out.println("\nBoard build up with stringbuilder made of dots:\n");
 
+        String boardStringBuilder = "";
+        boardStringBuilder += "  A B C D E F G H\n";
+        for (int row = 1; row < 9; row++) {
+            boardStringBuilder += row + "";
+            for (int col = 0; col < 8; col++) {
+                boardStringBuilder += " .";
+            }
+            boardStringBuilder += "\n"; // line break
+        }
+        System.out.println(boardStringBuilder);
     }
 }

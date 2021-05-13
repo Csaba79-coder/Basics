@@ -221,6 +221,14 @@ public class ArrayPractice0510 {
 //        The indexes of the items are as follows: 3
 //        The number of the elements are the following: 4
 
+
+
+        System.out.println("------------------------------");
+        System.out.println("------------7th---------------");
+        System.out.println("------------------------------\n");
+
+
+
     }
 }
 
