@@ -325,15 +325,24 @@ public class ArraysIfLoops_0508_01_FirstPart {
         System.out.println("Another solution with for loop:");
 
 
-        int n = bytes.length; // choose the longest length! as it is not permutable!
-        double[][] matrixTwoDimension = new double[3][n];
 
-        for (int i = 0; i < bytes.length; i++) {
-            matrixTwoDimension[0][i] = bytes[i];
-            System.out.println(matrixTwoDimension[0][i]);
+//        first make new int arrays than collect them into a new!
+//        int[] doubleToInt = new int[5];
+//        for (int i = 0; i < doubles.length; i++) {
+//            doubleToInt[i] = (int) doubles[i];
 
+
+        int[] doubleToInt = new int[doubles.length];
+        for (int i = 0; i < doubles.length; i++) {
+            doubleToInt[i] = (int) doubles[i];
         }
-        System.out.println("Jump to the next one ... could not solve :(");
+        System.out.println("The array (with double items) in int data type: " + Arrays.toString(doubleToInt));
+
+       int[] byteToInt = new int[bytes.length];
+        for (int i = 0; i < bytes.length; i++) {
+            byteToInt[i] = (int) bytes[i];
+        }
+        System.out.println("The array (with byte items) in int data type: " + Arrays.toString(byteToInt));
 
 
         System.out.println("------------------------------");
@@ -349,6 +358,28 @@ public class ArraysIfLoops_0508_01_FirstPart {
         System.out.println("------------------------------\n");
 
 
+        // check first the 9th out than the 10th (10th is the 2 dimension)
 
+
+
+
+        System.out.println("------------------------------");
+        System.out.println("-----------10th---------------");
+        System.out.println("------------------------------\n");
+
+//        int[][] multiples = new int[4][2];
+//        // 2D integer array with 4 rows and 2 columns String[][] cities = new String[3][3];
+//        // 2D String array with 3 rows and 3 columns
+
+// this is exercise 10
+        char[][] charsFromStrings = new char[(index + 1)][maxLength];
+//        System.out.println(maxLength); // maxLength = 6
+//        System.out.println((index + 1)); // (index + 1) = 4
+
+//        for (int i = 0; i < strings.length; i++) {
+//            charsFromStrings[0][i] = strings[i];
+//        }
+//
+//        System.out.println(Arrays.toString(charsFromStrings[(index + 1)][maxLength]));
     }
 }

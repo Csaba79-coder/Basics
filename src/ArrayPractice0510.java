@@ -223,12 +223,84 @@ public class ArrayPractice0510 {
 
 
 
+
         System.out.println("------------------------------");
         System.out.println("------------7th---------------");
         System.out.println("------------------------------\n");
 
 
 
+        double[][] firstTwoDimensionMatrixOfMyLife = new double[3][];
+
+        // just for try and to know how it works and operates!
+
+        firstTwoDimensionMatrixOfMyLife[0] = new double[]{10, 33, -2, 0, 56, -42, 99, -73, 60};
+        firstTwoDimensionMatrixOfMyLife[1] = new double[]{27, 969, -56, 1222, 8647000, -333, 7541, 89, 6502, -53042, 123, 876};
+        firstTwoDimensionMatrixOfMyLife[2] = new double[]{3.14, -765.99, 52.4986, -10.3333337, 834.0965};
+
+        System.out.println("This is my first new Two dimension of Array: " + Arrays.deepToString(firstTwoDimensionMatrixOfMyLife));
+
+        System.out.println("Another solution with for loop:");
+
+
+
+//        first make new int arrays than collect them into a new!
+//        int[] doubleToInt = new int[5];
+//        for (int i = 0; i < doubles.length; i++) {
+//            doubleToInt[i] = (int) doubles[i];
+//        }
+
+        int[] doubleToInt = new int[doubles.length];
+        for (int i = 0; i < doubles.length; i++) {
+            doubleToInt[i] = (int) doubles[i];
+        }
+        System.out.println(Arrays.toString(doubleToInt));
+
+        int n = bytes.length; // choose the longest length! as it is not permutable!
+        double[][] matrixTwoDimension = new double[3][n];
+
+        for (int i = 0; i < bytes.length; i++) {
+            matrixTwoDimension[0][i] = (double) bytes[i];
+            System.out.println(matrixTwoDimension[0][i]);
+        }
+        System.out.println("Jump to the next one ... could not solve :(");
+
+
+        System.out.println("------------------------------");
+        System.out.println("------------8th---------------");
+        System.out.println("------------------------------\n");
+
+
+        System.out.println("I have no array, sorry to inform you :)");
+
+
+        System.out.println("------------------------------");
+        System.out.println("------------9th---------------");
+        System.out.println("------------------------------\n");
+
+
+        // check first the 9th out than the 10th (10th is the 2 dimension)
+
+
+
+
+        System.out.println("------------------------------");
+        System.out.println("-----------10th---------------");
+        System.out.println("------------------------------\n");
+
+//        int[][] multiples = new int[4][2];
+//        // 2D integer array with 4 rows and 2 columns String[][] cities = new String[3][3];
+//        // 2D String array with 3 rows and 3 columns
+
+// this is exercise 10
+        char[][] charsFromStrings = new char[(index + 1)][maxLength];
+//        System.out.println(maxLength); // maxLength = 6
+//        System.out.println((index + 1)); // (index + 1) = 4
+
+//        for (int i = 0; i < strings.length; i++) {
+//            charsFromStrings[0][i] = strings[i];
+//        }
+//
+//        System.out.println(Arrays.toString(charsFromStrings[(index + 1)][maxLength]));
     }
 }
-
