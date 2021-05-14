@@ -250,20 +250,49 @@ public class ArrayPractice0510 {
 //            doubleToInt[i] = (int) doubles[i];
 //        }
 
+//        int[] doubleToInt = new int[doubles.length];
+//        for (int i = 0; i < doubles.length; i++) {
+//            doubleToInt[i] = (int) doubles[i];
+//        }
+//        System.out.println(Arrays.toString(doubleToInt));
+//
+//        int n = bytes.length; // choose the longest length! as it is not permutable!
+//        double[][] matrixTwoDimension = new double[3][n];
+//
+//        for (int i = 0; i < bytes.length; i++) {
+//            matrixTwoDimension[0][i] = (double) bytes[i];
+//            System.out.println(matrixTwoDimension[0][i]);
+//        }
+//        System.out.println("Jump to the next one ... could not solve :(");
+
+
         int[] doubleToInt = new int[doubles.length];
         for (int i = 0; i < doubles.length; i++) {
             doubleToInt[i] = (int) doubles[i];
         }
-        System.out.println(Arrays.toString(doubleToInt));
+        System.out.println("The array (with double items) in int data type: " + Arrays.toString(doubleToInt));
 
-        int n = bytes.length; // choose the longest length! as it is not permutable!
-        double[][] matrixTwoDimension = new double[3][n];
-
+        int[] byteToInt = new int[bytes.length];
         for (int i = 0; i < bytes.length; i++) {
-            matrixTwoDimension[0][i] = (double) bytes[i];
-            System.out.println(matrixTwoDimension[0][i]);
+            byteToInt[i] = (int) bytes[i];
         }
-        System.out.println("Jump to the next one ... could not solve :(");
+        System.out.println("The array (with byte items) in int data type: " + Arrays.toString(byteToInt));
+
+        int[] maxLengthOfArrays = new int[3];
+
+        maxLengthOfArrays[0] = byteToInt.length;
+        maxLengthOfArrays[1] = doubleToInt.length;
+        maxLengthOfArrays[2] = ints.length;
+
+        int maxOfArrays = maxLengthOfArrays[0];
+
+        for (int i = 0; i < maxLengthOfArrays.length; i++) {
+            if (maxOfArrays < maxLengthOfArrays[i]) {
+                maxOfArrays = maxLengthOfArrays[i];
+                System.out.println(maxLengthOfArrays[i]);
+            }
+        }
+        System.out.println("This is the max length of the new int type arrays (3 of them): " + maxOfArrays);
 
 
         System.out.println("------------------------------");

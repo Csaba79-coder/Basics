@@ -361,10 +361,52 @@ public class ArraysIfLoops_0508_01_FirstPart {
         System.out.println("This is the max length of the new int type arrays (3 of them): " + maxOfArrays);
 
 
-        int[][] twoDimensionArray = new int[3][maxOfArrays];
+        int n = maxOfArrays;
 
-        
+        int[][] twoDimensionArray = new int[3][n];
 
+        for (int i = 0; i < byteToInt.length; i++) {
+            twoDimensionArray[0][i] = byteToInt[i];
+                }
+        for (int i = 0; i < ints.length; i++) {
+            twoDimensionArray[1][i] = ints[i];
+        }
+        for (int i = 0; i < doubleToInt.length; i++) {
+            twoDimensionArray[2][i] = doubleToInt[i];
+        }
+        System.out.println("With stupid format: " +Arrays.toString(twoDimensionArray));
+        System.out.println(twoDimensionArray[0][0]);
+        System.out.println(twoDimensionArray[0][4]);
+
+
+        for (int i = 0; i < twoDimensionArray.length; i++) {
+            for (int j = 0; j < twoDimensionArray[i].length; j++) {
+                System.out.println("Elements by elements (arrays) in int: " + twoDimensionArray[i][j]);
+            }
+        }
+
+        System.out.println("\nThe same but converted to double: \n");
+
+        double[] intToDouble = new double[ints.length];
+        double[] byteToDouble = new double[bytes.length];
+
+
+        for (int i = 0; i < ints.length; i++) {
+            intToDouble[i] = (double) ints[i];
+        }
+        for (int i = 0; i < bytes.length; i++) {
+            byteToDouble[i] = (double) bytes[i];
+        }
+
+        double[][] matrix = {byteToDouble, intToDouble, doubles};
+
+        for (int i = 0; i < matrix.length; i++)
+        {
+            for (int j = 0; j < matrix[i].length; j++)
+            {
+                System.out.println("Arrays elements in double: " + matrix[i][j]);
+            }
+        }
 
         System.out.println("------------------------------");
         System.out.println("------------8th---------------");
