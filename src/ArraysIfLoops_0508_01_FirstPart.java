@@ -344,6 +344,27 @@ public class ArraysIfLoops_0508_01_FirstPart {
         }
         System.out.println("The array (with byte items) in int data type: " + Arrays.toString(byteToInt));
 
+        int[] maxLengthOfArrays = new int[3];
+
+        maxLengthOfArrays[0] = byteToInt.length;
+        maxLengthOfArrays[1] = doubleToInt.length;
+        maxLengthOfArrays[2] = ints.length;
+
+        int maxOfArrays = maxLengthOfArrays[0];
+
+        for (int i = 0; i < maxLengthOfArrays.length; i++) {
+            if (maxOfArrays < maxLengthOfArrays[i]) {
+                maxOfArrays = maxLengthOfArrays[i];
+                System.out.println(maxLengthOfArrays[i]);
+            }
+        }
+        System.out.println("This is the max length of the new int type arrays (3 of them): " + maxOfArrays);
+
+
+        int[][] twoDimensionArray = new int[3][maxOfArrays];
+
+        
+
 
         System.out.println("------------------------------");
         System.out.println("------------8th---------------");
