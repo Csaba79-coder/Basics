@@ -310,6 +310,73 @@ public class ArrayPractice0510 {
 
         // check first the 9th out than the 10th (10th is the 2 dimension)
 
+        // char[] charsFromStrings = new char[counterStrings];
+
+//        char[] ch = strings[index].toCharArray();
+//        System.out.println(index);
+
+//        E.g.:
+//
+//        String g = "line";
+//        char c = g.charAt(0);  // returns 'l'
+//        char[] c_arr = g.toCharArray();
+//        System.out.println(c_arr);
+
+        // System.out.println(strings[0]);
+
+        int sum = 0; // sum chars
+
+        for (int i=0; i < strings.length; i++) {
+            sum += strings[i].length();
+        }
+        System.out.println(sum);
+
+        int k = 0;
+        char[] charsFromStrOne = new char[sum];
+        for (int i = 0; i < strings.length; i++) {
+            for (int j = 0; j < strings[i].length(); j++) {
+                charsFromStrOne[k++] = strings[i].charAt(j);
+            }
+        }
+        System.out.println(Arrays.toString(charsFromStrOne));
+
+//
+//        for (int i = 0; i < strings.length; i++) {
+//            charsFromStrings[i] = strings[i].charAt(0);
+//            System.out.println(strings[i].charAt(0));
+//        }
+//
+//        for (int i = 0; i < strings.length; i++) {
+//            charsFromStrings[i] = strings[i].charAt(i);
+//            System.out.println(strings[i].charAt(i));
+//        }
+
+//        for (int i = 0; i < strings.length; i++) {
+//            for (int j = 0; j < strings[i].length(); j++) {
+//                charsFromStrings[i] = strings[i].charAt(0);
+//                System.out.println(strings[i].charAt(0));
+//            }
+//        }
+
+
+//        for (int i = 0; i < strings.length; i++) {
+//            for (int j = 0; j < strings[i].length(); j++) {
+//                char c = strings[i].charAt(0);
+//                System.out.println(c);
+//            }
+//        }
+
+
+//        for (int i = 0; i < strings.length; i++) {
+//            strings[i] = (char) strings.charAt(i);
+//
+//        }
+//
+//        for (int i = 0; i < strings.length; i++) {
+//            for (int j = 0; j < strings[i].length(); j++) {
+//                charsFromStrings[i] = strings[i].toCharArray();
+//            }
+//        }
 
 
 
@@ -322,7 +389,7 @@ public class ArrayPractice0510 {
 //        // 2D String array with 3 rows and 3 columns
 
 // this is exercise 10
-        char[][] charsFromStrings = new char[(index + 1)][maxLength];
+// char[][] charsFromStrings = new char[(index + 1)][maxLength];
 //        System.out.println(maxLength); // maxLength = 6
 //        System.out.println((index + 1)); // (index + 1) = 4
 
@@ -331,5 +398,16 @@ public class ArrayPractice0510 {
 //        }
 //
 //        System.out.println(Arrays.toString(charsFromStrings[(index + 1)][maxLength]));
+
+        char[][] charsFromStringsTwo = new char[strings.length][];
+        charsFromStringsTwo[0] = new char[4];
+
+        for (int i = 0; i < strings.length; i++) { // enter the two dimension of array! - first dimension
+            charsFromStringsTwo[i] = new char[strings[i].length()]; // creating the empty array for the words!
+            for (int j = 0; j < strings[i].length(); j++) { // enter the 2nd dimension
+                charsFromStringsTwo[i][j] = strings[i].charAt(j);
+            }
+        }
+        System.out.println(Arrays.deepToString(charsFromStringsTwo));
     }
 }

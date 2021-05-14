@@ -6,6 +6,7 @@ import java.util.stream.IntStream;
 
 
 public class ArraysIfLoops_0508_01_FirstPart {
+
     public static void main(String[] args) {
 
 
@@ -413,7 +414,24 @@ public class ArraysIfLoops_0508_01_FirstPart {
         System.out.println("------------------------------\n");
 
 
-        System.out.println("I have no array, sorry to inform you :)");
+        System.out.println("Sum of rows or sum of columns are the two different way to tell sum of all elements :)");
+        System.out.println("Can summarize with a for loop in a for loop (iterating through all elements!");
+
+        double  sumMatrix = 0;
+        double counterMatrix = 0;
+        for (double[] arr : matrix) {
+            for (double i : arr) {
+                sumMatrix += i;
+                counterMatrix ++;
+            }
+        }
+
+        System.out.println("The sum of all elements of the matrix in double: " + sumMatrix);
+        System.out.println("The average is: " + (sumMatrix / counterMatrix) + " (the value is in double)");
+
+
+//        The sum of all elements of the matrix in double: 8611172.4117663
+//        The average is: 331198.9389140885 (the value is in double)
 
 
         System.out.println("------------------------------");
@@ -423,26 +441,39 @@ public class ArraysIfLoops_0508_01_FirstPart {
 
         // check first the 9th out than the 10th (10th is the 2 dimension)
 
+        int counterStrings = 0;
+
+        for (int i = 0; i < strings.length; i++) {
+            for (int j = 0; j < strings[i].length(); j++) {
+                counterStrings++;
+            }
+        }
+        System.out.println("The sum of chars in strings' array: " + counterStrings);
 
 
+        int k = 0;
+        char[] charsFromStrOne = new char[counterStrings];
+        for (int i = 0; i < strings.length; i++) {
+            for (int j = 0; j < strings[i].length(); j++) {
+                charsFromStrOne[k++] = strings[i].charAt(j);
+            }
+        }
+        System.out.println(Arrays.toString(charsFromStrOne));
 
         System.out.println("------------------------------");
         System.out.println("-----------10th---------------");
         System.out.println("------------------------------\n");
 
-//        int[][] multiples = new int[4][2];
-//        // 2D integer array with 4 rows and 2 columns String[][] cities = new String[3][3];
-//        // 2D String array with 3 rows and 3 columns
 
-// this is exercise 10
-        char[][] charsFromStrings = new char[(index + 1)][maxLength];
-//        System.out.println(maxLength); // maxLength = 6
-//        System.out.println((index + 1)); // (index + 1) = 4
+        char[][] charsFromStringsTwo = new char[strings.length][];
+        charsFromStringsTwo[0] = new char[4];
 
-//        for (int i = 0; i < strings.length; i++) {
-//            charsFromStrings[0][i] = strings[i];
-//        }
-//
-//        System.out.println(Arrays.toString(charsFromStrings[(index + 1)][maxLength]));
+        for (int i = 0; i < strings.length; i++) { // enter the two dimension of array! - first dimension
+            charsFromStringsTwo[i] = new char[strings[i].length()]; // creating the empty array for the words!
+            for (int j = 0; j < strings[i].length(); j++) { // enter the 2nd dimension
+                charsFromStringsTwo[i][j] = strings[i].charAt(j);
+            }
+        }
+        System.out.println(Arrays.deepToString(charsFromStringsTwo));
     }
 }
