@@ -37,6 +37,7 @@ public class StringsToArrayChars {
             for (int j = 0; j < strings[i].length(); j++) {
                 charsFromStrOne[k++] = strings[i].charAt(j);
             }
+
         }
         System.out.println(Arrays.toString(charsFromStrOne));
 
