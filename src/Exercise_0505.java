@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 public class Exercise_0505 {
     public static void main(String[] args) {
 //        int n = 0;

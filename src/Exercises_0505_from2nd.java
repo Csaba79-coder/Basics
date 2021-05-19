@@ -1,5 +1,6 @@
 import java.util.Scanner;
 
+
 public class Exercises_0505_from2nd {
     public static void main(String[] args) {
 
@@ -124,7 +125,7 @@ public class Exercises_0505_from2nd {
         int max = 9;
 
         //Generate random int value from 0 to 9
-        System.out.println("Random value in int from "+min+" to "+max+ ":");
+        System.out.println("Random value in int from " + min + " to " + max + ":");
         int random_int = (int)Math.floor(Math.random()*(max-min+1)+min);
         System.out.println(random_int);
 
