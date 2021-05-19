@@ -69,13 +69,13 @@ public class ChessBoardInitialization_0509 {
         StringBuilder stringBuilder = new StringBuilder(8);
         stringBuilder.append("  A B C D E F G H\n");
         stringBuilder.append("1 W B W B W B W B\n");
-        stringBuilder.append("2 W B W B W B W B\n");
+        stringBuilder.append("2 B W B W B W B W\n");
         stringBuilder.append("3 W B W B W B W B\n");
-        stringBuilder.append("4 W B W B W B W B\n");
+        stringBuilder.append("4 B W B W B W B W\n");
         stringBuilder.append("5 W B W B W B W B\n");
-        stringBuilder.append("6 W B W B W B W B\n");
+        stringBuilder.append("6 B W B W B W B W\n");
         stringBuilder.append("7 W B W B W B W B\n");
-        stringBuilder.append("8 W B W B W B W B\n");
+        stringBuilder.append("8 B W B W B W B W\n");
         System.out.println(stringBuilder);
 
 
