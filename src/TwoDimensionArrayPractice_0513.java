@@ -1,4 +1,4 @@
-public class TwoDimensionArrayPractice_05_13 {
+public class TwoDimensionArrayPractice_0513 {
     public static void main(String[] args) {
 
         int rows = 10;

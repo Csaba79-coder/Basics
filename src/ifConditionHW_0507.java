@@ -139,7 +139,7 @@ public class ifConditionHW_0507 {
 
 
         // checking with if statement
-        System.out.println("Checking with if statement (vowel or constant)?!");
+        System.out.println("Checking with if statement (vowel or consonant)?!");
         System.out.println("Please give me a char (regarding ASCII - English ABC) for checking vowel or constant: ");
         char ch = scanner.next().charAt(0);
         scanner.close();
@@ -148,11 +148,11 @@ public class ifConditionHW_0507 {
                 ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U') {
             System.out.println(ch + " is a vowel");
         } else {
-            System.out.println(ch + " is a constant");
+            System.out.println(ch + " is a consonant");
         }
 
         // checking with switch
-        System.out.println("Checking with switch (vowel or constant)?!");
+        System.out.println("Checking with switch (vowel or consonant)?!");
 
         char chSwitchLower = Character.toLowerCase(ch);
 
